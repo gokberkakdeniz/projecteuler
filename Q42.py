@@ -1,0 +1,1 @@
+print(len(list(filter(lambda x: ((1+8*x)**0.5 - 1)/2 == int(((1+8*x)**0.5 - 1)/2), list(map(lambda word: sum([ord(letter)-64 for letter in word]), open("Q42.txt", "r").read().replace("\"","").split(",")))))))
