@@ -14,6 +14,7 @@
 ; What is the sum of the numbers on the diagonals in a 1001 by 1001 spiral formed in the same way?
 ;
 ; https://projecteuler.net/problem=28
+
 (define problem-3
   (lambda (N [start 1] [sum 1])
     (if (= N 1) sum (problem-3 (- N 2) (+ sum (- (* (sqr N) 4) (* 10 (- N 1)))) (+ sum (- (* (sqr N) 4) (* 6 (- N 1))))))
